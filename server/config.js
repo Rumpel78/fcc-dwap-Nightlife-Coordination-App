@@ -3,7 +3,7 @@ require('dotenv').load();
 const config = {};
 config.twitter = {};
 
-config.appName = 'YYY';
+config.appName = 'nightlife-coordination';
 config.port = process.env.PORT || 3001;
 config.dbHost = process.env.DB_HOST || 'localhost';
 config.jwtSecret = process.env.JWT_SECRET || 'superSecretKey12';

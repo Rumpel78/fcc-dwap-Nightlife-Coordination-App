@@ -8,9 +8,9 @@ function capitalizeFirstLetter(string) {
 
 const Welcome = ({ user }) => (
   <div align="center">
-    <h1>{ user && `${capitalizeFirstLetter(user.username)}, ` }Welcome {user && 'back'} to YYYY!</h1>
+    <h1>{ user && `${capitalizeFirstLetter(user.username)}, ` }Welcome {user && 'back'} to Nightlife Crawler!</h1>
     <h3>
-      Short description of app
+      Look what's going on and meet nice people!
     </h3>
     <br />
     <br />

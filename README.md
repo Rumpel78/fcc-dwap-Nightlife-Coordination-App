@@ -1,10 +1,13 @@
-## [FreeCodeCamp Dynamic Web Application Projects](https://www.freecodecamp.org) / [Build a YYYY App](https://www.freecodecamp.org/challenges/build-YYYY-app)
+## [FreeCodeCamp Dynamic Web Application Projects](https://www.freecodecamp.org) / [Build a YYYY App](https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app)
 
-* **Objective**: Build a full stack JavaScript app that is functionally similar to this: https://YYYY.herokuapp.com/ and deploy it to Heroku.
-* **User Story**: As an authenticated user, .
-* **User Story**: As an unauthenticated or authenticated user,.
+* **Objective**: Build a full stack JavaScript app that is functionally similar to this: https://yasser-nightlife-app.herokuapp.com/ and deploy it to Heroku.
+* **User Story**: As an unauthenticated user, I can view all bars in my area.
+* **User Story**: As an authenticated user, I can add myself to a bar to indicate I am going there tonight.
+* **User Story**: As an authenticated user, I can remove myself from a bar if I no longer want to go there.
+* **User Story**: As an unauthenticated user, when I login I should not have to search again.
+* **Hint**: Try using the Yelp API to find venues in the cities your users search for. If you use Yelp's API, be sure to mention so in your app.
 
-**Find a demo under: https://YYYY.app.rzipa.at**
+**Find a demo under: https://nightlife.app.rzipa.at**
 
 ### How to build this project
 
@@ -12,7 +15,7 @@ Easiest way to build and run this app is to use **docker-compose**:
 
 Prepare installation:
 * Create twitter app on https://apps.twitter.com/ - enter all requested information. Callback URL can be anything, but must be entered
-* Clone this repository `git clone https://github.com/Rumpel78/YYYY.git`
+* Clone this repository `git clone https://github.com/Rumpel78/fcc-dwap-Nightlife-Coordination-App.git`
 * Create docker-compose.yml `vim docker-compose.yml`
 * Enter a jwt secret (15 chars)
 * Fill in you Twitter Consumer Key and Consumer Secret
@@ -25,9 +28,9 @@ Sample docker-compose.yml:
 version: '2'
 
 services:
-  fcc-YYYY-app:
+  fcc-dwap-Nightlife-Coordination-App:
     build:
-      context: ./fcc-YYYY-app
+      context: ./fcc-dwap-Nightlife-Coordination-App
     restart: always
     environment:
       - "NODE_ENV=production"

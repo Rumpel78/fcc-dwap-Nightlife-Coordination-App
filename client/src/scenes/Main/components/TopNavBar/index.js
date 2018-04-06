@@ -10,14 +10,14 @@ const TopNavBar = () =>
     <Navbar inverse fixedTop>
       <Navbar.Header>
         <Navbar.Brand>
-          <Link to='/'> <img src={logo} className='App-logo' alt='logo' />VoteHub</Link>
+          <Link to='/'> <img src={logo} className='App-logo' alt='logo' />Nightlife Crawler</Link>
         </Navbar.Brand>
         <Navbar.Toggle />
       </Navbar.Header>
       <Navbar.Collapse>
         <Nav>
           <LinkContainer to='/about'><NavItem eventKey={1}>About</NavItem></LinkContainer>
-          <NavItem eventKey={3} href='https://www.freecodecamp.org/challenges/build-a-voting-app' target='_blank'>Open freeCodeCamp</NavItem>
+          <NavItem eventKey={3} href='https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app' target='_blank'>Open freeCodeCamp</NavItem>
         </Nav>
         <Nav pullRight>
           {Auth.isUserAuthenticated() && <LinkContainer to='/logout'><NavItem eventKey={4}>Logout</NavItem></LinkContainer>}
