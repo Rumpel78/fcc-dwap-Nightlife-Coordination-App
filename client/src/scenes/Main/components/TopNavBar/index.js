@@ -5,8 +5,6 @@ import React from 'react';
 import logo from './logo.svg';
 import Auth from '../../../../services/Auth';
 
-// const AuthFilter = Authorization([ 'manger', 'admin' ]);
-
 const TopNavBar = () =>
   (
     <Navbar inverse fixedTop>
@@ -18,12 +16,12 @@ const TopNavBar = () =>
       </Navbar.Header>
       <Navbar.Collapse>
         <Nav>
-          <LinkContainer to='/polls'><NavItem eventKey={2}>Polls</NavItem></LinkContainer>
-          <NavItem eventKey={2} href='https://www.freecodecamp.org/challenges/build-a-voting-app' target='_blank'>Open freeCodeCamp</NavItem>
+          <LinkContainer to='/about'><NavItem eventKey={1}>About</NavItem></LinkContainer>
+          <NavItem eventKey={3} href='https://www.freecodecamp.org/challenges/build-a-voting-app' target='_blank'>Open freeCodeCamp</NavItem>
         </Nav>
         <Nav pullRight>
-          {Auth.isUserAuthenticated() && <LinkContainer to='/logout'><NavItem eventKey={3}>Logout</NavItem></LinkContainer>}
-          {!Auth.isUserAuthenticated() && <LinkContainer to='/login'><NavItem eventKey={3}>Login / Register</NavItem></LinkContainer>}
+          {Auth.isUserAuthenticated() && <LinkContainer to='/logout'><NavItem eventKey={4}>Logout</NavItem></LinkContainer>}
+          {!Auth.isUserAuthenticated() && <LinkContainer to='/login'><NavItem eventKey={5}>Login / Register</NavItem></LinkContainer>}
         </Nav>
       </Navbar.Collapse>
     </Navbar>);

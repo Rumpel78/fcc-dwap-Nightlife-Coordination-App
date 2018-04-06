@@ -1,9 +1,9 @@
 version: '2'
 
 services:
-  fcc-dwap-voting-app:
+  fcc-YYYY-app:
     build:
-      context: ./fcc-dwap-voting-app
+      context: ./fcc-YYYY-app
     restart: always
     environment:
       - "NODE_ENV=production"
